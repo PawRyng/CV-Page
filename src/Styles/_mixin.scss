@@ -1,0 +1,26 @@
+@mixin title {
+  display : flex;
+  width   : 100%;
+
+  h2 {
+    width          : auto;
+    line-height    : 18px;
+    font-size      : 13px;
+    color          : #141414;
+    text-transform : uppercase;
+    letter-spacing : 0.04em;
+    margin-bottom  : 30px;
+    position       : relative;
+
+    &::before {
+      content          : "";
+      width            : 100%;
+      background-color : #ede574;
+      height           : 6px;
+      z-index          : -1;
+      bottom           : 0;
+      left             : 0;
+      position         : absolute;
+    }
+  }
+}

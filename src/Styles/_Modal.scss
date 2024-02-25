@@ -1,0 +1,188 @@
+@use "./Variables"as *;
+
+body:has(.modal) {
+  overflow: hidden;
+}
+
+#dark {
+  .modal {
+    background-color: $second-color-dark;
+
+    &-header {
+      &__row {
+        button {
+          color: $text-color;
+        }
+      }
+    }
+
+    &-content {
+      &__icons {
+        a {
+          svg {
+            fill: $text-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  position        : fixed;
+  z-index         : $modal-z-index + 1;
+  top             : 50%;
+  left            : 50%;
+  translate       : -50% -50%;
+  width           : 90%;
+  max-width       : 900px;
+  height          : max-content;
+  background-color: white;
+  box-shadow      : 0px 7px 10px #00000070;
+  // border: 1px solid $mainColor;
+  border-radius   : 8px;
+  padding         : 20px;
+
+  &-header {
+    padding-block: 0px 20px;
+
+    &__row {
+      display        : flex;
+      justify-content: space-between;
+      $subtitleHeight: 12px;
+
+      h5 {
+        font-size  : $subtitleHeight;
+        line-height: 1;
+      }
+
+      h6 {
+        line-height: 1;
+        font-size  : 20px;
+      }
+
+      button {
+        background-color: transparent;
+        font-size       : 20px;
+        line-height     : $subtitleHeight;
+        border          : none;
+        cursor          : pointer;
+      }
+    }
+  }
+
+  &-content {
+    display              : grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows   : 1fr max-content;
+    grid-column-gap      : 10px;
+    grid-row-gap         : 20px;
+    grid-template-areas  :
+      "video actions"
+      "description description";
+
+    &__description {
+      grid-area         : description;
+      font-size         : 12px;
+      overflow          : hidden;
+      display           : -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      text-overflow     : ellipsis;
+      max-height        : 6em;
+    }
+
+    &__icons {
+      grid-area: actions;
+
+      a {
+        display   : block;
+        width     : 25px;
+        transition: 0.3s;
+        fill      : #363636;
+
+        &:hover {
+          fill: #f26b38 !important;
+        }
+      }
+    }
+
+    &__chart {
+      grid-area: video;
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 635px) {
+  .modal {
+    &-content {
+      &__chart {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .modal {
+    &-content {
+      &--youtube {
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 636px) {
+  .modal {
+    &-content {
+      &__icons {
+        a {
+          margin-block: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 635px) {
+  .modal {
+    &-content {
+      grid-template-columns: 1fr;
+      grid-template-rows   : 1fr maxn-cotent max-content;
+      grid-column-gap      : 10px;
+      grid-row-gap         : 20px;
+      grid-template-areas  :
+        "video"
+        "actions"
+        "description";
+      justify-items: center;
+
+      &__chart {
+        width: 100%;
+      }
+
+      &__icons {
+        a {
+          width        : 30px;
+          margin-inline: 8px;
+          display      : inline-block;
+        }
+      }
+    }
+  }
+}
+
+.backdrop {
+  position        : fixed;
+  width           : 100vw;
+  height          : 100vh;
+  background-color: black;
+  opacity         : 0.5;
+  top             : 0;
+  left            : 0;
+  z-index         : $modal-z-index;
+}

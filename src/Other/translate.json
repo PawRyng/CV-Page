@@ -1,0 +1,225 @@
+{
+  "en": {
+    "Resume": "Resume",
+    "Protfolio": "Portfolio",
+    "Contact": "Contacts",
+    "title": "I'm",
+    "life": "Based in",
+    "footer": "All rights reserve",
+    "aboutMe": {
+      "title": "About Me",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae odio nulla. Vestibulum eget viverra nisl. Sed luctus fermentum auctor. Aenean nec convallis ligula. Quisque ac ligula at lectus facilisis accumsan eget in dolor. Morbi suscipit ligula at lacus lobortis, ac congue massa tincidunt. Vestibulum finibus tellus vitae tristique rutrum.",
+      "Name": "Name",
+      "Age": "Age",
+      "Job": "Job",
+      "CitizenShip": "Citizenship",
+      "CitizenShipCountry": "Your Country",
+      "Residence": "Residence",
+      "AgeFix": "Yeras",
+      "Download": "Download",
+      "nameFileToDownlod": ""
+    },
+    "Experience": {
+      "Title": "Experience",
+      "works": [
+        {
+          "date": "2023 - Present",
+          "spec": "Front-End Developer",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae odio nulla."
+        }
+      ]
+    },
+    "Education": {
+      "Title": "Education",
+      "school": [
+        {
+          "date": "2021 - Present",
+          "spec": "Your Education",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae odio nulla."
+        }
+      ]
+    },
+    "DesignSkills": "Design Skills",
+    "LanguageSkill": {
+      "title": "Language Skill",
+      "Lang": [
+        { "Name": "Lang 1", "shrot": "ln1" },
+        { "Name": "Lang 2", "shrot": "ln2" }
+      ]
+    },
+    "TechSkill": "Technical Skill",
+    "ContactContent": {
+      "title": "Contact",
+      "content": [
+        {
+          "title": "Phone",
+          "content": "123 123 123"
+        },
+        {
+          "title": "E-mail",
+          "content": "e-mail@test.pl"
+        }
+      ]
+    },
+    "PortfolioContent": {
+      "title": "Portfolio",
+      "search": [
+        { "title": "All", "sign": "All" },
+        { "title": "Music", "sign": "Music" },
+        { "title": "GitHub", "sign": "Pages" },
+        { "title": "Other Pages", "sign": "OtherPages",
+         "content": [{
+          "name": "Project 1",
+          "html_url": "https://www.lipsum.com/",
+          "mainTech": "CakePHP" ,
+          "Languages": {
+            "CakePHP": 60,
+            "Less": 40,
+            "Jquery": 20
+          }
+        },
+        {
+          "name": "Project 2",
+          "html_url": "https://www.lipsum.com/",
+          "mainTech": "CakePHP" ,
+          "Languages": {
+            "CakePHP": 60,
+            "Less": 40,
+            "Jquery": 20
+          }
+        }
+        ] }
+      ]
+    }
+  },
+  "pl": {
+    "Resume": "O mnie",
+    "Protfolio": "Portfolio",
+    "Contact": "Kontakt",
+    "title": "Jestem",
+    "life": "Zamieszkanie:",
+    "footer": "Wszelkie prawa zastrzeżone",
+    "aboutMe": {
+      "title": "O mnie",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae odio nulla. Vestibulum eget viverra nisl. Sed luctus fermentum auctor. Aenean nec convallis ligula. Quisque ac ligula at lectus facilisis accumsan eget in dolor",
+      "Name": "Imię",
+      "Age": "Wiek",
+      "Job": "Praca",
+      "CitizenShip": "Obywatelstwo",
+      "CitizenShipCountry": "Obywatelstwo",
+      "Residence": "Zamieszkanie",
+      "AgeFix": "Lata",
+      "Download": "Pobierz",
+      "nameFileToDownlod": ""
+    },
+    "Experience": {
+      "Title": "Doświadczenie",
+      "works": [
+        {
+          "date": "2023 - Obecnie",
+          "spec": "Front-End Developer",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae odio nulla"
+        },
+        {
+          "date": "2020 - 2023",
+          "spec": "Front-End Developer",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae odio nulla"
+        }
+      ]
+    },
+    "Education": {
+      "Title": "Edukacja",
+      "school": [
+        {
+          "date": "2021 - Obecnie",
+          "spec": "Edukacja",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae odio nulla"
+        },
+        {
+          "date": "2020 - 2021",
+          "spec": "Edukacja",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae odio nulla"
+        }
+      ]
+    },
+    "DesignSkills": "Programy graficzne",
+    "LanguageSkill": {
+      "title": "Języki",
+      "Lang": [
+        { "Name": "Polski", "shrot": "pl" },
+        { "Name": "Angielski", "shrot": "en" },
+        { "Name": "Niemiecki", "shrot": "de" }
+      ]
+    },
+    "TechSkill": "Umiejętności techniczne",
+    "ContactContent": {
+      "title": "Kontakt",
+      "content": [
+        {
+          "title": "Telefon",
+          "content": "123 123 123"
+        },
+        {
+          "title": "E-mail",
+          "content": "test@test.pl"
+        }
+      ]
+    },
+    "PortfolioContent": {
+      "title": "Portfolio",
+      "search": [
+        { "title": "Wszystko", "sign": "All" },
+        { "title": "Muzyka", "sign": "Music" },
+        { "title": "GitHub", "sign": "Pages" },
+        { "title": "Inne Projekty", "sign": "OtherPages",
+         "content": [{
+          "name": "Project 1",
+          "html_url": "https://www.lipsum.com/",
+          "mainTech": "CakePHP" ,
+          "Languages": {
+            "CakePHP": 60,
+            "Less": 40,
+            "Jquery": 20
+          }
+        },{
+          "name": "Project 2",
+          "html_url": "https://www.lipsum.com/",
+          "mainTech": "CakePHP" ,
+          "Languages": {
+            "CakePHP": 60,
+            "Less": 40,
+            "Jquery": 20
+          }
+        }
+        ] }
+        
+      ]
+    }
+  },
+  "Links": {
+    "Linkedin": "https://www.linkedin.com/",
+    "Instagram": "https://www.instagram.com/",
+    "Git": "https://github.com/"
+  },
+  "personalist": {
+    "firstName": "firstName",
+    "secondName": " secondName",
+    "Age": "99",
+    "Job": "Front-End Developer",
+    "residence": "residence",
+    "Email": "test@test.pl"
+  },
+  "DesignSkills": [
+    { "title": "Figma", "level": "100", "icon": "Figma" }
+  ],
+  "Languages": [
+    { "short": "pl", "Level": 10 },
+    { "short": "en", "Level": 5 },
+    { "short": "de", "Level": 1 }
+  ],
+  "TechSkill": [
+    { "Title": "HTML/CSS", "Level": 100 },
+    { "Title": "JavaScript", "Level": 60 }
+  ],
+  "OtherLinks": ["id_youtube_video"]
+}

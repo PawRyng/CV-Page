@@ -1,0 +1,126 @@
+@use "./Variables"as *;
+
+#dark {
+  background-color : $main-color-dark;
+  border-inline    : 10px solid $second-color-dark;
+
+  .containerTop,
+  .footer {
+    background-color : $second-color-dark;
+    color            : $text-color;
+  }
+
+  .footer {
+    &__container {
+      a {
+        svg {
+          fill : $text-color;
+        }
+      }
+    }
+  }
+
+  .containerTop {
+    .navigation {
+      &__hamburger {
+        color : $text-color;
+      }
+
+      &__menu {
+        background-color : $second-color-dark;
+
+        &-item {
+          color : $text-color;
+        }
+      }
+    }
+  }
+
+  .container-main {
+    color : $text-color;
+
+    .glith {
+      color : $text-color;
+    }
+
+    .buttonsNavigation {
+      &__item {
+        color : $text-color;
+      }
+    }
+
+    .about {
+      &__title {
+        h2 {
+          color : $text-color;
+        }
+      }
+
+      &__userInformation {
+        li {
+          span {
+            color : $text-color;
+          }
+        }
+      }
+    }
+
+    .tree {
+      &__title {
+        h2 {
+          color : $text-color;
+        }
+      }
+
+      &-items {
+        &-item {
+          &__spec {
+            color : $text-color;
+          }
+
+          &__description {
+            color : $second-text-color;
+          }
+        }
+      }
+    }
+
+    .language {
+      &__title {
+        h2 {
+          color : $text-color;
+        }
+      }
+    }
+
+    .TechSkill {
+      &__title {
+        h2 {
+          color : $text-color;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    &Items {
+      &__content {
+        color : $text-color;
+      }
+    }
+  }
+
+  .contact {
+    &__title {
+      h2 {
+        color : $text-color;
+      }
+    }
+
+    &-container__item {
+      a {
+        color : $second-text-color;
+      }
+    }
+  }
+}

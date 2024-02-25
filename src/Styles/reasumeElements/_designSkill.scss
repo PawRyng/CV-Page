@@ -1,0 +1,33 @@
+.designSkills {
+  width: 90%;
+  margin: 0 auto 100px;
+  display: flex;
+  flex-direction: column;
+  h6 {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  &-skill {
+    width: 100%;
+    margin: 15px auto;
+
+    &__level {
+      position: absolute;
+      left: calc(10% + 30px);
+      top: -30px;
+    }
+    &__prograssBar {
+      position: relative;
+      height: 4px;
+      border-radius: 20px;
+      &--empty {
+        width: 100%;
+        background-color: #dddddd;
+      }
+      &--progress {
+        width: 20%;
+        background-color: #f26b38;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "less.format.braceStyle": "expand",
+  "less.format.spaceAroundSelectorSeparator": true,
+  "formate.additionalSpaces": 1,
+  "editor.defaultFormatter": "xuwenjie.formate-custom",
+  "[scss]": {
+    "editor.defaultFormatter": "MikeBovenlander.formate"
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": "-min.css",
+      "savePath": null,
+      "generateMap": false
+    }
+  ]
+}

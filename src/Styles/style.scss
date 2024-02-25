@@ -1,0 +1,41 @@
+@import "loading";
+@import "fonts";
+@import "Nav";
+@import "Main";
+@import "_Footer";
+@import "Resume";
+@import "./Contact";
+@import "./Portfolio";
+@import "./Dark";
+@import "./Modal";
+
+* {
+  margin      : 0;
+  padding     : 0;
+  box-sizing  : border-box;
+  font-family : "Roboto Mono";
+  font-weight : 400;
+}
+
+body {
+  // padding-bottom: 10vh;
+  cursor : default;
+}
+
+a {
+  cursor : pointer;
+}
+
+.App {
+  overflow-x : hidden;
+  opacity    : 0;
+  transition : 500ms;
+  z-index    : 1;
+  min-height : 100dvh;
+
+  &--active {
+    opacity : 1;
+  }
+
+  border : 10px solid #f26b38;
+}

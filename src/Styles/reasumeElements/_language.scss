@@ -1,0 +1,53 @@
+@use "../Variables" as *;
+// @import "mixin";
+
+.language {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto 20vh;
+  &__title {
+    @include title;
+  }
+  &-item {
+    width: 50%;
+    margin: 1rem 0;
+    min-width: 310px;
+    &__Name {
+      // nazwa jezyka
+      font-size: 14px;
+      margin-bottom: 0.5em;
+    }
+    &-dots {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      &__dot {
+        height: $dotSize;
+        width: $dotSize;
+        background-color: #dddddd;
+        border-radius: 100%;
+        &--active {
+          background-color: $mainColor;
+        }
+      }
+    }
+  }
+}
+
+// mediaquires
+@media (max-width: 740px) {
+  .language {
+    justify-content: center;
+    &-item {
+      width: 50%;
+      margin: 1rem 10px;
+      min-width: 310px;
+
+      &-dots {
+        width: 100%;
+      }
+    }
+  }
+}

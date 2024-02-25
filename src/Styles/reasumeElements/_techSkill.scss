@@ -1,0 +1,96 @@
+@use "../Variables"as *;
+
+$item-size  : 130px;
+
+.TechSkill {
+  width  : 90%;
+  margin : 0 auto 100px;
+
+  &-container {
+    display               : grid;
+    grid-template-columns : repeat(8, 1fr);
+    justify-items         : center
+  }
+
+  &__title {
+    @include title;
+    margin-bottom : 30px;
+  }
+
+  &-item {
+    width     : 100px;
+    height    : $item-size;
+    transform : rotate(270deg);
+    border    : none;
+    margin    : 10px 30px;
+
+    svg {
+      position : relative;
+      width    : $item-size;
+      height   : $item-size;
+
+      circle {
+        width        : 100%;
+        height       : 100%;
+        fill         : transparent;
+        stroke-width : 10px;
+        stroke       : $second-color;
+        transform    : translate(5px, 5px);
+
+        &:nth-child(2) {
+          stroke           : $mainColor;
+          stroke-dasharray : 440;
+        }
+      }
+    }
+
+    &__title {
+      position  : absolute;
+      transform : translateX(50%) translateY(-50%) rotate(90deg);
+      right     : 40%;
+      top       : 50%;
+
+      p {
+        margin     : 0px;
+        text-align : center;
+        font-size  : 12px;
+
+        &:first-of-type {
+          font-size : 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .TechSkill {
+    &-container {
+      grid-template-columns : repeat(6, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .TechSkill {
+    &-container {
+      grid-template-columns : repeat(4, 1fr);
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .TechSkill {
+    &-container {
+      grid-template-columns : repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 555px) {
+  .TechSkill {
+    &-container {
+      justify-content : center;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@use "./Variables"as *;
+
+.contact {
+  $iconSize  : 20px;
+  $iconMargin: 10px;
+
+  //   max-width: 95%;
+  width : 90%;
+  margin: 0 auto;
+
+  &__title {
+    @include title;
+  }
+
+  &-container {
+    margin-bottom: 20vh;
+
+    &__item {
+      display  : flex;
+      flex-wrap: wrap;
+      margin   : $iconMargin 0;
+
+      svg {
+        fill       : $mainColor;
+        width      : $iconSize;
+        margin     : $iconMargin;
+        margin-left: 0px;
+      }
+
+      h6 {
+        display    : flex;
+        align-items: center;
+        font-size  : 15px;
+        height     : $iconSize + (2 * $iconMargin);
+        width      : calc(100% - ($iconSize + (2 * $iconMargin)));
+        font-weight: 500;
+      }
+
+      a {
+        color          : black;
+        text-decoration: none;
+        transition     : 0.2s;
+
+        &:hover {
+          color: $mainColor !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .contact {
+    width: 70%;
+
+    &-container {
+      display: flex;
+    }
+  }
+}
