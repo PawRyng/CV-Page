@@ -90,7 +90,8 @@
         }
         ] }
       ]
-    }
+    },
+    "notFoundPage": "Back to homepage"
   },
   "pl": {
     "Resume": "O mnie",
@@ -194,7 +195,8 @@
         ] }
         
       ]
-    }
+    },
+    "notFoundPage": "Powrót na stronę główną"
   },
   "Links": {
     "Linkedin": "https://www.linkedin.com/",

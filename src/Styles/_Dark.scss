@@ -123,4 +123,10 @@
       }
     }
   }
+
+  .not-found {
+    &__back-to-homepage {
+      color : $text-color;
+    }
+  }
 }

@@ -11,6 +11,7 @@ import "./Styles/style-min.css";
 import Nav from "./Controllers/Nav";
 import Footer from "./Controllers/Footer";
 import Loading from "./Controllers/loading";
+import NotFoundPage from "./Controllers/NotFoundPage";
 
 
 //translations
@@ -107,6 +108,8 @@ const Main = ({ setloading, git, photos, youtube }) => {
               </Suspense>
             }
           />
+
+          <Route path="*" element={<NotFoundPage lang={lang.notFoundPage} />}/>
         </Routes>
       </div>
       <Footer trans={translations} langg={lang} />

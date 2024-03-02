@@ -8,6 +8,7 @@
 @import "./Portfolio";
 @import "./Dark";
 @import "./Modal";
+@import "./404";
 
 * {
   margin      : 0;
@@ -37,5 +38,5 @@ a {
     opacity : 1;
   }
 
-  border : 10px solid #f26b38;
+  border  : 10px solid #f26b38;
 }

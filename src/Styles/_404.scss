@@ -1,0 +1,13 @@
+@use "./Variables"as *;
+
+.not-found {
+    &__back-to-homepage {
+        display            : block;
+        color              : $main-color-dark;
+        text-decoration    : none;
+        text-align         : center;
+        margin-block-start : 5%;
+        font-size          : 18px;
+        font-weight        : 500;
+    }
+}
