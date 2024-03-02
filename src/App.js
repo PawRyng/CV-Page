@@ -19,22 +19,16 @@ function App() {
     const youtubeApiLink = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${link}&key=${process.env.REACT_APP_API_GOOGLE_KEY}&fields=items(id,snippet(title,thumbnails,description))`;
     const githubApiLink = "https://api.github.com/users/PawRyng/repos";
 
-    axios
-      .get(githubApiLink, {
-        headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_API_GITHUB_KEY}`,
-        },
-      })
-      .then((data) => {
-        const photoApiLink = `https://picsum.photos/v2/list?page=3&limit=${
-          data.data.length +
-          dataOther.en.PortfolioContent.search[3].content.length
-        }`;
-        setGitHub(data.data);
-        axios.get(photoApiLink).then((dataPhoto) => {
-          setPhotos(dataPhoto.data);
-        });
+    axios.get(githubApiLink).then((data) => {
+      const photoApiLink = `https://picsum.photos/v2/list?page=3&limit=${
+        data.data.length +
+        dataOther.en.PortfolioContent.search[3].content.length
+      }`;
+      setGitHub(data.data);
+      axios.get(photoApiLink).then((dataPhoto) => {
+        setPhotos(dataPhoto.data);
       });
+    });
     axios.get(youtubeApiLink).then((dataYt) => setYoutube(dataYt.data.items));
 
     if (cookies.dark_mode === "true") {
